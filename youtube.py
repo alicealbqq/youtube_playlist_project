@@ -34,11 +34,11 @@ def fetch_playlist_videos(youtube, playlist_id):
     return playlist_videos
 
 def fetch_video_statistics(youtube, video_ids):
-    stats = []
+    stats = {}
 
     for video_id in video_ids:
         res = youtube.videos().list(part='statistics', id=video_id).execute()
-        stats.extend(res['items'])
+        stats[video_id] = res['items'][0]
 
     return stats
 
@@ -50,8 +50,7 @@ def extract_data(playlist_videos, stats):
         video_id = snippet['resourceId']['videoId']
 
         # Find statistics information for the current video
-        stats_info = next((item for item in stats if item['id'] == video_id), None)
-
+        stats_info = stats[video_id]
         # Extract relevant data
         data.append({
             'video_id': video_id,
