@@ -1,8 +1,8 @@
 {
   "type": "service_account",
   "project_id": "mindful-coder-414613",
-  "private_key_id": "16c0481c6d174be146d18289bd3be097bceba8e4",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtQlLB9/Y58W3M\nu+p+/h2VI/+1LA2zrb2TU03P1IMTxoYv+19oxyPhiwykLlZ6gUp9v3Zdenba5pot\ngTAEVB7Ve7v6cKPeRl9Gbgcdz3Aqv3LD2QnU/VNkDyjKeRJ7EBrr8Ebxk3Q6a0fa\nYtW9K1fgBqFqpJF8FubgO1KHCTTXxg2zF000RUr51CvzURz+OKDvlDxZ5SiwQvwk\nrQbmDdpGzADJcaB1M03ImqAS/XKtjN99UB2PGk3xpCflDJwQX9FQhCIB+s8RAESH\nC9sIoT1kBVM8heJ+QIKOevlcToW6od3FbLbyd3Nxl38Uy7wjSloJuPyXfhzwQzSc\nEK9NGV3tAgMBAAECggEAGG5R/56Atq5z0msMF7CrCLj9CXXHD9dXtFLKldwMSKlV\niiYKz9pG1bq3A16yXI9nKuCo5ukKIfdi9bgyBmY7O9S5Dsk73i+zpxmEQOCbmzeI\nThQIdiNrkyAtGxHj+HzuoubshguKF+PBS8rkg0p9l24v7Dr89c+/6g4LZtW2QRel\nWwKba2eSVXj7186BZTg5Axjxu4yOKw6DfSgYS+Lvox96ghdBTWdl/DY065IxLqnJ\nXDJpmc1V/M5eRsMGvJBtgaTu1yz1thQ+NuHQ2kDIcaqqaPwKjlvPI2ao196gbNNB\noNW3HNRjCMmWgIdCMehCHg9Di3eQUNYVo0CJqnFTYQKBgQDrZwr9qRof0pYGkG4x\n4ml8YCcm9NVkAO+FDjm/mxPdQRAXJWibzR09eSqrL+hYG0qcz/6q+5v+UqRFCZ+O\n17ZPK4vift1b5/iXl4wAJ6QNb72weIC3oshSB5hFO3vKO4b2OPG1mb08l5NQVU8K\nuadKQtpS9bOGtM4gPIrLBVo1zQKBgQC8a0hyTyVUqdBOZ5taFwjDYxViVkD+1b5W\neI+lgeqweToVi9uoySunShesiS/NJ87sS8zLuMZj5RpojoDaAwwqqrPE+9aj2ig1\nzpwKxgR5cRgzfXGudTY0KfOL6USUN3E2AwVrThcDLQWJ9cvb2rCLekqNN6J+kFMn\nBWIW3UuooQKBgHk74FUzOdkZw1ouGBJo4JrFimRtw1h1guWrpeIgI+LXF0pUYcOb\np2t5c5gmXCrEI3EPTcERRA1+0ksb4ajXP3UWoDxNygMDPOwViGyr/blNywuPg/sP\nQsu8TZeaQu6sKZ21RgaY3vTNu3ir9sE3TAja1UXUdFjz1RSVGYXlg8ghAoGBAItM\nta7tHKhPM5YDuzMLvIrXgkPFiR/eXm4HjAvM1PnLZknvsGJE+GUhvgbtFc4TFERW\ndf5XiTTpeHC8ij6j6ibRNT75AWL6Mqg1K+A7LaurFT1cDOPx/DTsnwZdWzpJEwXf\nje4bOaA7dNDeS+0q7ULxEpT9AMGZaiB7Nl25FeqBAoGAKLHwzFXY8tmlYYPs7aqc\nB0Ju23x2SJgZvJfvoW5lGp44fUvVgqFCclh0a6ewmcXahPYkprsqiiyjnFleCqmn\nyB/0s0YrWZUPPSOWy4VYeyobA79kJWwxTJAAspwPoJ0gPlP1FfX8YmoEeuL32J4Q\nJoJReLVa5oGMGlg3eUzv9LQ=\n-----END PRIVATE KEY-----\n",
+  "private_key_id": "private-key",
+   "private_key": "private-key",
   "client_email": "youtube@mindful-coder-414613.iam.gserviceaccount.com",
   "client_id": "117799315216176701479",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
