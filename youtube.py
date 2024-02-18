@@ -58,9 +58,9 @@ def extract_data(playlist_videos, stats):
             'video_description': snippet['description'],
             'published_date': str(snippet['publishedAt']),
             'thumbnail': snippet['thumbnails']['high']['url'],
-            'likes': int(stats_info['statistics']['likeCount']) if stats_info else None,
-            'views': int(stats_info['statistics']['viewCount']) if stats_info else None,
-            'comments': int(stats_info['statistics']['commentCount']) if stats_info else None,
+            'likes': int(stats_info['statistics']['likeCount']),
+            'views': int(stats_info['statistics']['viewCount']),
+            'comments': int(stats_info['statistics']['commentCount']),
         })
     
     return data
