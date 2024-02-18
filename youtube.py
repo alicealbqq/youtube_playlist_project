@@ -3,7 +3,7 @@ import pandas as pd
 from google.oauth2 import service_account
 
 # YouTube API key
-youTube_api_key="AIzaSyCesV6nmHSZRkNRDpDCOI1wwqeRdoyaMuI"
+youTube_api_key="private-key"
 # Build the YouTube service
 youtube_service = build('youtube', 'v3', developerKey=youTube_api_key)
 playlist_id = 'PLMC9KNkIncKvYin_USF1qoJQnIyMAfRxl'
