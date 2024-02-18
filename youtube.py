@@ -5,18 +5,18 @@ from google.oauth2 import service_account
 # YouTube API key
 youTube_api_key="AIzaSyCesV6nmHSZRkNRDpDCOI1wwqeRdoyaMuI"
 # Build the YouTube service
-youtube = build('youtube', 'v3', developerKey=youTube_api_key)
+youtube_service = build('youtube', 'v3', developerKey=youTube_api_key)
 playlist_id = 'PLMC9KNkIncKvYin_USF1qoJQnIyMAfRxl'
 playlist_name = 'Best Pop Songs of All Time'
 
-def fetch_playlist_videos(youtube, playlist_id):
+def fetch_playlist_videos(playlist_id):
     playlist_videos = []
     next_page_token = None
 
     try:
         # Loop to retrieve all videos in the playlist
         while True:
-            res = youtube.playlistItems().list(part='snippet', playlistId = playlist_id, maxResults=50, pageToken=next_page_token).execute()
+            res = youtube_service.playlistItems().list(part='snippet', playlistId = playlist_id, maxResults=50, pageToken=next_page_token).execute()
             if 'items' in res:
                 # Add fetched videos to the playlist_videos list
                 playlist_videos += res['items']
@@ -33,11 +33,11 @@ def fetch_playlist_videos(youtube, playlist_id):
     
     return playlist_videos
 
-def fetch_video_statistics(youtube, video_ids):
+def fetch_video_statistics(video_ids):
     stats = {}
 
     for video_id in video_ids:
-        res = youtube.videos().list(part='statistics', id=video_id).execute()
+        res = youtube_service.videos().list(part='statistics', id=video_id).execute()
         stats[video_id] = res['items'][0]
 
     return stats
@@ -97,11 +97,11 @@ def save_to_csv(data, playlist_data):
 
 def main():
     # Fetch playlist videos
-    playlist_videos = fetch_playlist_videos(youtube, playlist_id)
+    playlist_videos = fetch_playlist_videos(playlist_id)
     # Extract video IDs from the playlist
     video_ids = [video['snippet']['resourceId']['videoId'] for video in playlist_videos]
     # Fetch statistics for the videos
-    stats = fetch_video_statistics(youtube, video_ids)
+    stats = fetch_video_statistics(video_ids)
     # Extract relevant data from videos and their statistics
     data = extract_data(playlist_videos, stats)
     # Upload the extracted data to BigQuery
