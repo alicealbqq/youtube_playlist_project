@@ -73,7 +73,7 @@ def upload_to_bigquery(data):
     table_id = 'dados_youtube'
 
     table_path = f'{project_id}.{dataset_id}.{table_id}'
-    key_path = 'C:\\Users\\Maria Alice\\Desktop\\case_youtube\\mindful-coder-414613-16c0481c6d17.json'
+    key_path = './mindful-coder-414613-16c0481c6d17.json'
 
     credentials = service_account.Credentials.from_service_account_file(key_path, scopes=['https://www.googleapis.com/auth/cloud-platform'])
 
